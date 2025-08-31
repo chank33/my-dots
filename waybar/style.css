@@ -1,0 +1,52 @@
+* {
+    font-family: "UbuntuMono Nerd Font";
+    font-size: 24px;
+}
+
+
+window#waybar { 
+    background-color: #424041; 
+    background: shade(alpha(@borders, 0.9), 1);
+    color: #ffffff;    
+}
+
+.modules-left {
+
+
+	padding: 0px 0px 0px 0px;
+}
+
+.modules-right {
+
+	padding: 0px 5px 0px 0px;
+}
+
+#workspaces button {
+	padding: 0px 11px 0px 11px; 
+ 	min-width: 1px;
+	color: #424041;
+}
+
+
+#workspaces button.active { 
+	padding: 0px 11px 0px 11px; 
+	color: #ffffff;
+}
+
+#clock {
+	margin: 0px 15px 0px 15px;
+}
+
+
+#tray{
+   padding: 0px 8px 0px 5px;
+   margin: 0px 5px 0px 5px;
+}
+
+#custom-launcher{
+        font-size: 20px;
+        background-image: url('/home/k/Pictures/menu.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+}

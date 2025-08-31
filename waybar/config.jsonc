@@ -1,0 +1,45 @@
+{
+	"layer": "top",	
+	"position": "bottom",
+	
+	"mode": "dock",
+    "height": 25,
+    "modules-left": ["hyprland/workspaces", "custom/scratch", "hyprland/submap", "hyprland/window"],
+    "modules-center": ["custom/launcher"],
+    "modules-right": ["tray", "clock"],
+
+	"wlr/workspaces": {
+        "disable-scroll": true,
+        "disable-markup": true,
+        "format": "{index}", 
+        "active-only": false,
+        "sort-by-number": true,
+        "all-outputs": false,
+
+        "persistent-workspaces": {
+        "3": [],
+    }
+
+},
+	"hyprland/window": {
+    	"format": "{}",
+    	"max-length": 150,
+},
+    "tray": {
+        "icon-size": 18,
+        "spacing": 15
+},
+    "clock": {
+        "format": "{:%d/%m/%Y %R %p}",
+        "interval": 30,
+        "on-click": "hyprpanel t calendarmenu" 
+},
+
+"custom/launcher": {
+        //"format":"<U+F44E>",
+        "format":"    ",
+        "tooltip": false,
+        "on-click": "exec nwg-drawer -c 7 -is 70 -spacing 23",
+     },
+
+}

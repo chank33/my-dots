@@ -1,0 +1,71 @@
+# Refer to https://wiki.hyprland.org/Configuring/Variables/
+# https://wiki.hyprland.org/Configuring/Variables/#general
+
+# firefox theme 
+# https://color.firefox.com/?theme=XQAAAAIFAQAAAAAAAABBKYhm849SCia2CaaEGccwS-xMDPrv2Sw36BYTWsjBXX55aDBLBR6aQ5EWdnQh1ZCmNL8ea0ZkxBbKz3LfXwXjxYPcp75IMQ1FL6CzqQsnX7D5PhXihU27WBiPCs9MO0Nz7MAWOYtaSEcu7dIst3bGYIqh_PKMr5vrCKl_z2xknjP_s_R-cwStHtnHM6VUtHTF5i1T6K7_9OluAA
+
+#flexokai 
+
+ #FFFCE9 - yellowy 
+ #8ED5CD - blueyish
+ #00A7B4 - bluer
+ #00000 - blacked
+ #7F7F7F - greyish ... tentative
+
+general {
+    gaps_in = 13
+    gaps_out = 26
+    border_size = 5
+
+    # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
+
+    col.active_border = rgb(000000)
+    col.inactive_border = rgb(000000)
+
+    
+   # bluey default
+   # col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
+   
+   # bluey default
+   # col.inactive_border = rgba(595959aa)
+
+    # Set to true enable resizing windows by clicking and dragging on borders and gaps
+    resize_on_border = false
+
+    # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
+    allow_tearing = false
+
+    layout = dwindle
+}
+
+decoration {
+    rounding = 5
+    rounding_power = 4
+
+    active_opacity = 1
+    inactive_opacity = 1
+    fullscreen_opacity = 1
+    dim_inactive = 0
+    dim_special = 0.5
+
+    blur {
+        enabled = yes
+        size = 3
+        passes = 4
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+        brightness = 0.7
+    }
+
+    shadow {
+        enabled = false
+        ignore_window = false
+        offset = 6 6
+        range = 8
+        render_power = 2
+        scale = 1.0
+        color = 0xaaffffff
+        color_inactive = 0x66ffffff
+    }
+}
